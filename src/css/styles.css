@@ -1271,6 +1271,111 @@ video {
   }
 }
 
+.address-container {
+  display: flex;
+  align-items: center;
+  border-width: 1px;
+  border-color: transparent;
+  border-radius: 0.125rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.address-container:hover {
+  --border-opacity: 1;
+  border-color: #fff;
+  border-color: rgba(255, 255, 255, var(--border-opacity));
+}
+
+.item-nav-mid {
+  margin-right: 1rem;
+  border-width: 1px;
+  border-color: transparent;
+  border-radius: 0.125rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.item-nav-mid:hover {
+  --border-opacity: 1;
+  border-color: #fff;
+  border-color: rgba(255, 255, 255, var(--border-opacity));
+}
+
+.item-nav-inf {
+  border-bottom-width: 2px;
+  border-color: transparent;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.item-nav-inf:hover {
+  --border-opacity: 1;
+  border-color: #E47911;
+  border-color: rgba(228, 121, 17, var(--border-opacity));
+  --text-opacity: 1;
+  color: #E47911;
+  color: rgba(228, 121, 17, var(--text-opacity));
+}
+
+.btn-amazon-prime {
+  font-size: 0.875rem;
+  --bg-opacity: 1;
+  background-color: #F0C14B;
+  background-color: rgba(240, 193, 75, var(--bg-opacity));
+  border-width: 1px;
+  --border-opacity: 1;
+  border-color: #b7791f;
+  border-color: rgba(183, 121, 31, var(--border-opacity));
+  border-radius: 0.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  height: 3rem;
+  display: block;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.item-footer-inf {
+  display: none;
+  --text-opacity: 1;
+  color: #718096;
+  color: rgba(113, 128, 150, var(--text-opacity));
+  margin-bottom: 2.5rem;
+}
+
+/* MEDIA QUERY */
+
+@media (min-width: 768px) {
+  .address-container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .btn-amazon-prime {
+    font-size: 0.75rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 2.5rem;
+    height: 2rem;
+    display: flex;
+    width: auto;
+  }
+
+  .item-footer-inf {
+    display: block;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -1521,4 +1626,3 @@ video {
     }
   }
 }
-  
