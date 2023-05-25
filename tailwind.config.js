@@ -23,7 +23,7 @@ module.exports = {
         "yellow-350": "#F0C14B",
       },
       spacing: {
-        7: "1.75rem",
+        "7": "1.75rem",
         "75px": "75px",
         "210px": "210px",
       },
